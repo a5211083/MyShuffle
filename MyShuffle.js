@@ -1,4 +1,4 @@
-// MyShuffle:一个专门处理排序的小工具。http://blog.csdn.net/csr0312/article/details/48155633
+// MyShuffle:一个专门处理排序的小工具。感谢并参考了http://blog.csdn.net/csr0312/article/details/48155633的方法
 
 var MyShuffle = new Object();
 //list：排序的对象；updown:升序1降序-1
@@ -55,7 +55,7 @@ MyShuffle.seleter=function(link,list,names,match){
       // 报错信息
       var err = list.find($nameseleter).eq(0).attr(names);
       if(typeof err=="undefined"){
-        alert("没有查询到符合要求的车辆");
+        alert("没有查询到符合要求的对象");
       }
     }
   })
@@ -87,7 +87,7 @@ MyShuffle.condition=function(link,list,names){
        // 报错信息
       var err = $(list).find("li").is(':visible');
       if(err==false){
-        alert("没有查询到符合要求的车辆");
+        alert("没有查询到符合要求的对象");
       }
     }
   })
